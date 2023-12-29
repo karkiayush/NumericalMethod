@@ -1,0 +1,34 @@
+ Lab Topics
+	 Bisection method d
+	 False position method d
+	 Newton's Raphson Method d
+	 Secant Method
+	 Lagrange's interpolation
+	 Fixed point Method
+	 Curve Fitting
+ 
+ 
+ 
+Root: those value which on subtituting on the equation satisfies that equation.
+y=f(x) is parallel or overlapping to x axis.
+
+BISECTION METHOD
+Assumptions:
+a. f(x) is continuous on [a,b]
+b. f(a).f(b)<0				
+
+Algorithm:
+step1: Define function f(x)
+step2: Define Error E
+step3: Choose a<b such that f(a)*f(b)<0. If it satisfies, the root of equation lies between a and b.
+step4: use formula x=(a+b)/2
+step5: compute f(x)
+step6: if f(x)<E, then root is x, 
+		else
+		check if f(a)*f(b)<b
+			if true, put b=x 
+			else a=x
+		    Goto step 4. 
+step7: end		
+
+	
