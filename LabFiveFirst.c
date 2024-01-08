@@ -38,7 +38,7 @@ int main()
         sumX += x[i];
         sumY += y[i];
         sumXX += (x[i] * x[i]);
-        sumXY += (y[i] * y[i]);
+        sumXY += (x[i] * y[i]);
     }
 
     printf("\n i=%d\t sumx=%f\t sumy=%f\t sumxy=%f\t sumxx=%f\t", i, sumX, sumY, sumXX, sumXY);
