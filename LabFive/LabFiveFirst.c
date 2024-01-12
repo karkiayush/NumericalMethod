@@ -13,7 +13,7 @@ mod 3 -> 2 -> fill value of x and y -> AC -> shift+1 -> 3
 */
 
 #include <stdio.h>
-#include <conio.h>
+// #include <conio.h>
 
 int main()
 {
