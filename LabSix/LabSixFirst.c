@@ -34,7 +34,7 @@ int main()
         y0 = y1;
         z0 = z1;
 
-    } while (e1 < e || e2 < e || e3 < e);
+    } while (e1 > e || e2 > e || e3 > e);
 
     printf("The solution is: x=%f, y=%f, z=%f\n", x1, y1, z1);
 
