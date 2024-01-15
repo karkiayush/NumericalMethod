@@ -5,7 +5,7 @@
 bool isFunctionalValuePositive(double X)
 {
     double Fx = pow(X, 3) - (2 * X) - 5;
-    if (Fx < 0)
+    if (Fx > 0)
     {
         return true;
     }
