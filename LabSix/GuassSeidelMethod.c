@@ -1,9 +1,3 @@
-/*
-Guass Jacobi and Guass Seidal Method
-It is named after the name of two greates scientist Jacobi & Seidal.
-*/
-
-// Coding the Guass Jacobi Method
 #include <stdio.h>
 #include <math.h>
 
@@ -18,23 +12,24 @@ int main()
     int i = 1;
 
     printf("Enter the error allowed: ");
-    scanf("%d", &e);
+    scanf("%f", &e); // corrected the format specifier to %f for float
+
     do
     {
         iterCounter++;
         x1 = f1(x0, y0, z0);
-        y1 = f2(x0, y0, z0);
-        z1 = f3(x0, y0, z0);
+        y1 = f2(x1, y0, z0); // use the updated value of x1
+        z1 = f3(x1, y1, z0); // use the updated values of x1 and y1
 
         e1 = fabs(x0 - x1);
         e2 = fabs(y0 - y1);
         e3 = fabs(z0 - z1);
 
-        i++;
-
         x0 = x1;
         y0 = y1;
         z0 = z1;
+
+        i++;
 
     } while (e1 > e || e2 > e || e3 > e);
 
