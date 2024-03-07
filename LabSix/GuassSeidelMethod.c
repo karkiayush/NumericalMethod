@@ -7,9 +7,8 @@
 
 int main()
 {
-    int iterCounter = 0;
+    int iterCounter = 1;
     float x0 = 0, y0 = 0, z0 = 0, x1, y1, z1, e1, e2, e3, e;
-    int i = 1;
 
     printf("Enter the error allowed: ");
     scanf("%f", &e); // corrected the format specifier to %f for float
@@ -28,8 +27,6 @@ int main()
         x0 = x1;
         y0 = y1;
         z0 = z1;
-
-        i++;
 
     } while (e1 > e || e2 > e || e3 > e);
 

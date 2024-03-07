@@ -13,9 +13,8 @@ It is named after the name of two greates scientist Jacobi & Seidal.
 
 int main()
 {
-    int iterCounter = 0;
+    int iterCounter = 1;
     float x0 = 0, y0 = 0, z0 = 0, x1, y1, z1, e1, e2, e3, e;
-    int i = 1;
 
     printf("Enter the error allowed: ");
     scanf("%d", &e);
@@ -29,8 +28,6 @@ int main()
         e1 = fabs(x0 - x1);
         e2 = fabs(y0 - y1);
         e3 = fabs(z0 - z1);
-
-        i++;
 
         x0 = x1;
         y0 = y1;
